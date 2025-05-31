@@ -16,7 +16,7 @@ export default function Home() {
         <div className="container relative z-10 px-6 mx-auto max-w-7xl">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              Hi, I&apos;m <span className="text-primary">John Doe</span>
+              Hi, I&apos;m <span className="text-primary">Manu Dev</span>
             </h1>
             <p className="mb-8 text-lg md:text-xl text-muted-foreground">
               Full Stack Developer building modern web applications with React, Node.js, and cloud technologies.

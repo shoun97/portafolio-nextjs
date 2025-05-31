@@ -5,8 +5,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 
 export const metadata: Metadata = {
-  title: 'About Me | John Doe - Full Stack Developer',
-  description: 'Learn more about John Doe, a Full Stack Developer with expertise in React, Node.js, and modern web technologies.',
+  title: 'About Me | Manu Dev - Full Stack Developer',
+  description: 'Learn more about Manu Dev, a Full Stack Developer with expertise in React, Node.js, and modern web technologies.',
 };
 
 export default function AboutPage() {
@@ -42,7 +42,7 @@ export default function AboutPage() {
           <div className="relative w-48 h-48 mb-6 overflow-hidden rounded-full bg-muted">
             <Image 
               src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg"
-              alt="John Doe"
+              alt="Manu Dev"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 192px, 192px"

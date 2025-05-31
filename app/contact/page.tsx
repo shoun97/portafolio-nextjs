@@ -3,8 +3,8 @@ import ContactForm from '@/components/contact/contact-form';
 import SocialLinks from '@/components/contact/social-links';
 
 export const metadata: Metadata = {
-  title: 'Contact | John Doe - Full Stack Developer',
-  description: 'Get in touch with John Doe for freelance projects, job opportunities, or collaboration.',
+  title: 'Contact | Manu Dev - Full Stack Developer',
+  description: 'Get in touch with Manu Dev for freelance projects, job opportunities, or collaboration.',
 };
 
 export default function ContactPage() {
