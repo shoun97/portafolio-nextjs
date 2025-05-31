@@ -11,6 +11,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { toast } from 'sonner';
 
+
+import { supabase } from '@/lib/supabase';
+
+
 const formSchema = z.object({
   name: z.string().min(2, {
     message: 'Name must be at least 2 characters.',
@@ -39,18 +43,21 @@ export default function ContactForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
-    
-    // In a real application, you would send this data to your server or an email service
-    console.log(values);
-    
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
+
+    const { data, error } = await supabase.from('contacts').insert([values]);
+
+    if (error) {
+      toast.error('Failed to send message. Please try again.');
+      console.error(error);
+    } else {
       toast.success('Message sent! I will get back to you soon.');
       form.reset();
-    }, 1000);
+    }
+
+    setIsSubmitting(false);
+
   }
 
   return (
@@ -77,7 +84,7 @@ export default function ContactForm() {
                 </FormItem>
               )}
             />
-            
+
             <FormField
               control={form.control}
               name="email"
@@ -91,7 +98,7 @@ export default function ContactForm() {
                 </FormItem>
               )}
             />
-            
+
             <FormField
               control={form.control}
               name="subject"
@@ -105,7 +112,7 @@ export default function ContactForm() {
                 </FormItem>
               )}
             />
-            
+
             <FormField
               control={form.control}
               name="message"
@@ -113,17 +120,17 @@ export default function ContactForm() {
                 <FormItem>
                   <FormLabel>Message</FormLabel>
                   <FormControl>
-                    <Textarea 
-                      placeholder="Tell me about your project or inquiry..." 
-                      className="min-h-32" 
-                      {...field} 
+                    <Textarea
+                      placeholder="Tell me about your project or inquiry..."
+                      className="min-h-32"
+                      {...field}
                     />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
-            
+
             <Button type="submit" className="w-full" disabled={isSubmitting}>
               {isSubmitting ? 'Sending...' : 'Send Message'}
             </Button>
