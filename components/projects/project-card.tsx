@@ -48,7 +48,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </Link>
         <div className="flex space-x-2">
           {project.githubUrl && (
-            <Button asChild variant="ghost\" size="icon">
+            <Button asChild variant="ghost" size="icon">
               <a 
                 href={project.githubUrl} 
                 target="_blank" 
