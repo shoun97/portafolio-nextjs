@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'public',
   eslint: {
     ignoreDuringBuilds: true,
   },
-  images: { unoptimized: true }, // opcional para imágenes sin optimización automática
+  images: { unoptimized: true },
 };
 
 module.exports = nextConfig;
