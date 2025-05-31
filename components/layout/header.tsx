@@ -40,7 +40,7 @@ export default function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="text-xl font-bold">
-            JD<span className="text-primary">.</span>
+            MANU<span className="text-primary">.</span>
           </Link>
         </div>
         
@@ -85,7 +85,7 @@ export default function Header() {
           <div className="fixed inset-y-0 right-0 z-50 w-full max-w-xs overflow-y-auto bg-background px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link href="/" className="text-xl font-bold" onClick={() => setMobileMenuOpen(false)}>
-                JD<span className="text-primary">.</span>
+                MANU<span className="text-primary">.</span>
               </Link>
               <Button
                 variant="ghost"

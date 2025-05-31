@@ -3,7 +3,6 @@ import Image from 'next/image';
 import type { Skill } from '@/lib/data';
 import { skills } from '@/lib/data';
 import { Card, CardContent } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
 
 export const metadata: Metadata = {
   title: 'About Me | Manu Dev - Full Stack Developer',
@@ -45,7 +44,7 @@ export default function AboutPage() {
         <div className="md:col-span-2 flex justify-center md:justify-start">
           <div className="relative w-48 h-48 overflow-hidden rounded-full bg-muted">
             <Image
-              src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg"
+              src="https://www.upwork.com/profile-portraits/c1rzdMILTxq6SZ0GuhcRzs08aWVx_wq9QnsBZrHnEvxqRqKBMVNsy_3H_9L15pNwa4"
               alt="Manu Dev"
               fill
               className="object-cover"

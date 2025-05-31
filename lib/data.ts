@@ -76,9 +76,9 @@ export const skills: Skill[] = [
 ];
 
 export const socialLinks = {
-  github: 'https://github.com/johndoe',
-  linkedin: 'https://linkedin.com/in/johndoe',
-  upwork: 'https://upwork.com/freelancers/johndoe',
-  email: 'hello@johndoe.dev',
-  whatsapp: 'https://wa.me/1234567890',
+  github: 'https://github.com/shoun97',
+  linkedin: 'https://www.linkedin.com/in/manuel-urra/',
+  upwork: 'https://www.upwork.com/freelancers/manud3v',
+  email: 'manuelurra2497@gmail.com',
+  whatsapp: 'https://wa.me/56969020106',
 };
