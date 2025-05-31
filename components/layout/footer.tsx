@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           <Link
-            href="https://github.com/johndoe"
+            href="https://github.com/shoun97"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground/70 hover:text-foreground"
@@ -16,7 +16,7 @@ export default function Footer() {
             <Github className="h-6 w-6" aria-hidden="true" />
           </Link>
           <Link
-            href="https://linkedin.com/in/johndoe"
+            href="https://www.linkedin.com/in/manuel-urra/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground/70 hover:text-foreground"
@@ -25,7 +25,7 @@ export default function Footer() {
             <Linkedin className="h-6 w-6" aria-hidden="true" />
           </Link>
           <Link
-            href="mailto:hello@johndoe.dev"
+            href="mailto:manuelurra2497@gmail.com"
             className="text-foreground/70 hover:text-foreground"
           >
             <span className="sr-only">Email</span>

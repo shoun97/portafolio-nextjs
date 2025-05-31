@@ -33,7 +33,7 @@ export default function Home() {
                 </a>
               </Button>
               <Button asChild variant="ghost" size="lg">
-                <a href="https://github.com/johndoe" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/shoun97" target="_blank" rel="noopener noreferrer">
                   <Github className="mr-2 h-5 w-5" /> GitHub
                 </a>
               </Button>
